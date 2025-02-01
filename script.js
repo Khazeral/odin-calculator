@@ -16,3 +16,19 @@ const divide = (a,b) => {
     }
     return a / b
 }
+
+const operate = (firstTerm, secondTerm, operator)=>{
+    switch(operator){
+        case "+":
+            return add(firstTerm,secondTerm)
+        case "*":
+            return multiply(firstTerm,secondTerm)
+        case "-":
+            return substract(firstTerm,secondTerm)
+        case "/":
+            return divide(firstTerm,secondTerm)    
+        default:
+            alert("This operation is not taken")
+    }
+
+}
