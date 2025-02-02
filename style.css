@@ -62,7 +62,7 @@ button:active {
 }
 
 #del-button {
-  width: 100%;
   background-color: #ff4136;
   color: white;
+  width: 75%;
 }

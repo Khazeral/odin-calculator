@@ -4,39 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="./utils.js" type="module"></script>
+    <script src="./calculate.js" type="module"></script>
+    <script src="./script.js" type="module"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
 
 <body>
     <div id="calculator-container">
-        <div id="operation-display"></div>
+        <div id="operation-display">0</div>
         <div id="buttons-container">
-            <button id="del-button">DEL</button>
-            <div class="button-line">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>/</button>
+            <div class="button-line" id="control-buttons">
+                <button value="del" id="del-button">DEL</button>
+                <button value="AC" id="AC-button">AC</button>
             </div>
             <div class="button-line">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>*</button>
+                <button value="7">7</button>
+                <button value="8">8</button>
+                <button value="9">9</button>
+                <button value="/">/</button>
             </div>
             <div class="button-line">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>-</button>
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button value="*">*</button>
             </div>
             <div class="button-line">
-                <button>0</button>
-                <button>,</button>
-                <button>=</button>
-                <button>+</button>
+                <button value="1">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button value="-">-</button>
+            </div>
+            <div class="button-line">
+                <button value="0">0</button>
+                <button value=".">.</button>
+                <button value="=">=</button>
+                <button value="+">+</button>
             </div>
         </div>
     </div>
