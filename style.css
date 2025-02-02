@@ -30,6 +30,7 @@ body {
   border-radius: 6px;
   margin-bottom: 15px;
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+  overflow-x: hidden;
 }
 
 #buttons-container {
